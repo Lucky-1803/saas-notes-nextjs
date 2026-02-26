@@ -3,7 +3,7 @@ import { connectDB } from "@/app/lib/db";
 import { Note } from "@/app/models/Note";
 import { Types } from "mongoose";
 import { getServerSession } from "next-auth";
-import { authOptions } from "../../auth/[...nextauth]/route";
+import { authOptions } from "@/app/lib/auth"
 
 interface RouteParams {
     params : {

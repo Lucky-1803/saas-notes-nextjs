@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { connectDB } from "@/app/lib/db";
 import { Note } from "@/app/models/Note";
 import { getServerSession } from "next-auth";
-import { authOptions } from "../auth/[...nextauth]/route";
+import { authOptions } from "@/app/lib/auth"
 
 interface CreateNoteBody {
     title : string,
